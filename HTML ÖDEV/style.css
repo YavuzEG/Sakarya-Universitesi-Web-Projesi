@@ -22,7 +22,6 @@
     transform: translate(-50%,-50%);
     font-weight: 700;
     font-size: x-large;
-
 }
 
 #Hobiler{
@@ -32,10 +31,15 @@
     font-weight: 600;
 }
 
-h3{
+ #h3gri{
     font-size: 60px;
     font-weight: 600;
     color: #444;
+}
+
+h1{
+    font-size: 60px;
+    font-weight: 600;
 }
 
 #container{
@@ -45,6 +49,7 @@ h3{
 }
 
 #sol{
+    
     float: left;
     border-right:3px solid #444;
     font-size: 30px;
@@ -82,3 +87,32 @@ hr{
     margin-bottom: 100px;
     margin-top: 50px;
 }
+
+#sperde{
+    height: 700px;
+    background-color: black;
+    opacity: 0.5;
+}
+
+#slider{
+    height: 700px;
+    background: black;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+#scontent{
+
+    color: black;
+    position: absolute;
+    top: 70%;
+    left:50%;
+    /*içeriği tam orta noktasına göre konumlandırmak için*/
+    transform: translate(-50%,-50%);
+    font-weight: 700;
+    font-size: x-large;
+    text-decoration: underline;
+}
+
