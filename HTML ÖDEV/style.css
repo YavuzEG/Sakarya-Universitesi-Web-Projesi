@@ -1,0 +1,84 @@
+#anasayfa{
+    height: 600px;
+    background-image:url("/resimler/anasayfa.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+#perde{
+    height: 600px;
+    background-color: black;
+    opacity: 0.8;
+}
+
+#content{
+    color: white;
+    position: absolute;
+    top: 40%;
+    left:50%;
+    /*içeriği tam orta noktasına göre konumlandırmak için*/
+    transform: translate(-50%,-50%);
+    font-weight: 700;
+    font-size: x-large;
+
+}
+
+#Hobiler{
+    padding: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 60px;
+    font-weight: 600;
+    color: #444;
+}
+
+#container{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+}
+
+#sol{
+    float: left;
+    border-right:3px solid #444;
+    font-size: 30px;
+    width: 400px;
+    color: #444;
+}
+
+#h5sol{
+    font-weight: 200;
+    font-size: 30px;
+}
+
+#sag{
+    float: right;
+    width: 750px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 15px;
+
+}
+
+.img-fluid{
+max-height: 400px;
+margin-bottom: 50px;
+
+}
+.mt100{
+    margin-top: 50px;
+}
+
+hr{
+    font-size: 1000px;
+    color: #df0606;
+    opacity: 1;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
