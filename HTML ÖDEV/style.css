@@ -7,6 +7,8 @@
 
 }
 
+
+
 #perde {
     height: 600px;
     background-color: black;
@@ -123,4 +125,18 @@ hr {
 .bcw {
     background-color: hsla(188, 92%, 37%, 0.404);
 
+}
+
+#arkaplan {
+    height: 600px;
+    background-image: url("resimler/mirasspor.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.orta{
+    text-align: center;
+
+    margin-left: 250px;
 }
