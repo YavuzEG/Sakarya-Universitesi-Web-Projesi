@@ -30,9 +30,10 @@
                     <a class="nav-link" href="ozgecmis.html">Özgeçmiş</a>
                     <a class="nav-link" href="sehrim.html">Şehrim</a>
                     <a class="nav-link" href="miras.html">Mirasımız</a>
-                    <a class="nav-link active" aria-current="page" href="ilgialan.html">İlgi Alanlarım</a>
-                    <a class="nav-link" href="iletisim.html">İletişim</a>
-                    <button class="btn btn-outline-success me-2" type="button" onclick="git()" id="ibtn" name="giris_btn">Giriş</button>
+                    <a class="nav-link" href="ilgialan.html">İlgi Alanlarım</a>
+                    <a class="nav-link active" aria-current="page" href="iletisim.html">İletişim</a>
+                    <button class="btn btn-outline-success me-2" type="button" onclick="git()" id="ibtn"
+                        name="giris_btn">Giriş</button>
                 </div>
             </div>
         </div>
@@ -41,40 +42,59 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
-        <script>   
-            function git(){
-            window.location.href="girisyap.html";
+    <script>
+        function git() {
+            window.location.href = "girisyap.html";
         } </script>
     <!--Menü-->
 
-    <!--Hava Durumu-->
+    <!--İletişim-->
+    <br><br>
+    <section class="Hobiler">
+        <h3 id="h3gri">GÖNDERİLDİ</h3>
+        <br></br><br></br>
+        <table class="table table-bordered">
 
-    <section id="iarka">
+            <tr>
+                <td class="tip">Ad</td>
+                <td id="isname"></td>
+            </tr>
+            <tr>
+                <td>Soyad</td>
+                <td id="issurn"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td id="isemail"></td>
+            </tr>
+            <tr>
+                <td>Tel</td>
+                <td id="isphone"></td>
+            </tr>
+            <tr>
+                <td>Mesaj</td>
+                <td id="istext"></td>
+            </tr>
 
-        <div class="app">
-            <div class="header">
-                <h1>Hava Durumu</h1>
-                <input type="text" id="searchBar" placeholder="Şehir Giriniz">
+        </table> 
 
-            </div>
-            <div id="hcontent">
-                <div class="city">
-                    Samsun , TR
-                </div>
-                <div class="temp"> X°C</div>
-                <div class="desc">X</div>
-                <div class="minmax">min°C / max°C</div>
-            </div>
-        </div>
-
-        <!--Java Script-->
-        <script src="script.js"></script>
-
-
-                <!--Java Script-->
     </section>
-    <!--Hava Durumu-->
+    <!--İletişim-->
+    <script>
+        var iname=localStorage.getItem("iname");
+        var iemail=localStorage.getItem("iemail");
+        var isurn=localStorage.getItem("isurn");
+        var iphone=localStorage.getItem("iphone");
+        var itext=localStorage.getItem("itext");
 
+        document.getElementById("isname").innerText=iname;
+        document.getElementById("issurn").innerText=iemail;
+        document.getElementById("isemail").innerText=isurn;
+        document.getElementById("isphone").innerText=iphone;
+        document.getElementById("istext").innerText=itext;
+
+
+    </script>
 
 </body>
 

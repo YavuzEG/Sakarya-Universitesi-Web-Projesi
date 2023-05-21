@@ -17,7 +17,7 @@
 
     <!--Menü-->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Yavuz Emre Gündüz</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -26,11 +26,15 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link" href="hakkimda.html">Hakkımda</a>
+                    <a class="nav-link" href="index.html">Hakkımda</a>
                     <a class="nav-link" href="ozgecmis.html">Özgeçmiş</a>
-                    <a class="nav-link active " aria-current="page" href="#Sehrim">Şehrim</a>
+                    <a class="nav-link active " aria-current="page" href="sehrim.html">Şehrim</a>
                     <a class="nav-link" href="miras.html">Mirasımız</a>
-                    <a class="nav-link" href="ilgialan.php">İlgi Alanlarım</a>
+                    <a class="nav-link" href="ilgialan.html">İlgi Alanlarım</a>
+                    <a class="nav-link" href="iletisim.html">İletişim</a>
+                    <button class="btn btn-outline-success me-2" type="button" onclick="git()" id="ibtn"
+                        name="giris_btn">Giriş</button>
+
                 </div>
             </div>
         </div>
@@ -39,6 +43,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
+    <script>
+        function git() {
+            window.location.href = "girisyap.html";
+        } </script>
     <!--Menü-->
 
     <!--Slider-->
@@ -55,51 +63,218 @@
                 aria-label="Slide 4"></button>
         </div>
         <div id="slider">
-                <div class="carousel-inner" id="sperde">
-                    <div class="carousel-item active">
-                        <img src="resimler/Samsun2.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block" id="scontent">
-                            <h1 class="bcw" >Samsun</h1>
-                            <p class="bcw">2023 Verilerine Göre Samunun Tahmini Nüfusu 1.374.570</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="resimler/Samsun1.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block" id="scontent">
-                            <h1 class="bcw">Müzeler</h1>
-                            <p class="bcw">Gazi,Arkeoloji ve Etnografya,Kent Müzesi ve Bandırma Vapuru gezilebilecek yerler arasında </p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="resimler/samsun3.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block" id="scontent">
-                            <h1 class="bcw">Tarihi ve Doğal Güzellikler</h1>
-                            <p class="bcw">Türkiyedeki 420 kuşdan Nesli Tükenmekte Olan Kuş Türleri Dahil 321 Farklı Kuş Türünü Bir Arada Bafra Kızılırmak Deltası Kuş Cenneti’nde Görebiliriz.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="resimler/Samsun4.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block" id="scontent">
-                            <h1 class="bcw">Amazon Köyü</h1>
-                            <p class="bcw">Batı Park'ta Kurulan Bu Bu Köy Samsunda Yaşadığı Düşünülen Kadın Savaşçıların Temsilini İçeriyor</p>
-                        </div>
+            <div class="carousel-inner" id="sperde">
+                <div class="carousel-item active">
+                    <a href="#Samsun">
+                    <img src="resimler/Samsun2.jpg" class="d-block w-100" alt="...">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block" id="scontent">
+                        <h1 class="bcw">Samsun</h1>
+                        <p class="bcw">2023 Verilerine Göre Samsunun Tahmini Nüfusu 1.374.570</p>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <div class="carousel-item">
+                    <a href="#Muze">
+                    <img src="resimler/Samsun1.jpg" class="d-block w-100" alt="...">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block" id="scontent">
+                        <h1 class="bcw">Müzeler</h1>
+                        <p class="bcw">Gazi,Arkeoloji ve Etnografya,Kent Müzesi ve Bandırma Vapuru gezilebilecek
+                            yerler
+                            arasında </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="#Tarih">
+                    <img src="resimler/samsun3.jpg" class="d-block w-100" alt="...">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block" id="scontent">
+                        <h1 class="bcw">Tarihi ve Doğal Güzellikler</h1>
+                        <p class="bcw">Türkiyedeki 420 kuşdan Nesli Tükenmekte Olan Kuş Türleri Dahil 321 Farklı Kuş
+                            Türünü Bir Arada Bafra Kızılırmak Deltası Kuş Cenneti’nde Görebiliriz.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="#Amazon">
+                    <img src="resimler/Samsun4.jpg" class="d-block w-100" alt="...">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block" id="scontent">
+                        <h1 class="bcw">Amazon Köyü</h1>
+                        <p class="bcw">Batı Park'ta Kurulan Bu Bu Köy Samsunda Yaşadığı Düşünülen Kadın Savaşçıların
+                            Temsilini İçeriyor</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </div>
     <!--Slider-->
 
+    <!--Açıklama-->
+    <section id="Samsun" class="Hobiler">
 
+        <h3 id="h3gri"> Samsun</h3>
+
+        <br><br>
+
+        <article id="container">
+            <p id="makale">Samsun, Türkiye'nin Karadeniz Bölgesi'nde yer alan tarihi ve kültürel zenginlikleriyle ön
+                plana çıkan bir
+                şehirdir. Tarih boyunca birçok medeniyete ev sahipliği yapmış olan Samsun, kendine özgü bir atmosferi ve
+                büyüleyici güzellikleriyle ziyaretçilerini cezbeder.
+
+                Samsun, Karadeniz'in kıyısında yer aldığı için sahip olduğu doğal güzellikleriyle ünlüdür. Şehri
+                çevreleyen muhteşem kumsalları, temiz denizi ve serin Karadeniz havasıyla ziyaretçilerine eşsiz bir
+                deneyim sunar. Samsun'un en ünlü plajlarından biri olan Atakum Plajı, uzun sahil şeridi ve keyifli
+                atmosferiyle hem yerli hem de yabancı turistlerin uğrak noktasıdır.
+
+                Ancak Samsun sadece doğal güzellikleriyle değil, aynı zamanda tarihi ve kültürel mirasıyla da ön plana
+                çıkar. Şehirde bulunan tarihi yapılar, geçmişten günümüze uzanan bir yolculuğa davet eder. Samsun'un
+                sembol yapılarından biri olan Bandırma Vapuru, Türkiye'nin bağımsızlık mücadelesinde önemli bir rol
+                oynamış olan Mustafa Kemal Atatürk'ün Samsun'a çıkışını simgeler. Aynı zamanda şehirde bulunan Atatürk
+                Evi ve Müzesi, Atatürk'ün Samsun'da kaldığı süreci ve milli mücadeleye başlangıcını ziyaretçilerle
+                paylaşır.
+
+                Samsun, kültürel etkinlikleri ve festivalleriyle de canlı bir şehirdir. Her yıl düzenlenen Samsun
+                Uluslararası Atatürk Kültür ve Sanat Festivali, müzik, dans, sergi ve tiyatro gibi etkinliklere ev
+                sahipliği yaparak ziyaretçilere unutulmaz anlar yaşatır. Ayrıca Samsun'a özgü halk oyunları ve folklör
+                gösterileri, şehrin zengin kültürel dokusunu yansıtır.
+
+                Samsun, lezzetli mutfağıyla da tanınır. Karadeniz'in taze ve doğal ürünlerinden elde edilen yemekler,
+                şehrin gastronomi turizmi açısından da önemli bir noktasını oluşturur. Hamsi, karalahana, mısır ekmeği
+                gibi yöresel lezzetler, Samsun mutfağının vazgeçilmezlerindendir.
+
+                Sonuç olarak, Samsun doğal güzellikleri, tarihi ve kültürel zenginlikleri, festivalleri ve lezzetli
+                mutfağıyla keşfedilmeyi bekleyen bir şehirdir. Hem yerli hem de yabancı ziyaretçiler için cazip bir
+                turistik destinasyon olan Samsun, Karadeniz'in büyüleyici atmosferini ve misafirperverliğini en iyi
+                şekilde sunar.</p>
+        </article>
+    </section>
+    <hr>
+    <section id="Muze" class="Hobiler">
+
+        <h3 id="h3gri"> Müzeler</h3>
+
+        <br><br>
+
+        <article id="container">
+            <p id="makale">Samsun, zengin tarihi ve kültürel mirasıyla birlikte çeşitli müzeleriyle de dikkat çeken bir
+                şehirdir. Bu müzeler, ziyaretçilere Samsun'un geçmişini, kültürünü ve sanatını daha yakından keşfetme
+                fırsatı sunar. İşte Samsun'da bulunan bazı müzelerin içeriği:
+            </p>
+            <p id="makale">
+                1-Samsun Arkeoloji ve Etnografya Müzesi:
+                Samsun Arkeoloji ve Etnografya Müzesi, şehrin zengin arkeolojik ve etnografik mirasını sergileyen önemli
+                bir müzedir. Bu müzede, arkeolojik kazılardan elde edilen eserler, tarih öncesi dönemlerden başlayarak
+                Roma, Bizans ve Osmanlı dönemine kadar uzanan bir zaman dilimini kapsar. Aynı zamanda müzede, Samsun ve
+                çevresindeki halkın geleneksel kültürünü yansıtan etnografik objeler de sergilenir.
+            </p>
+            <p id="makale">
+                2-Samsun Kent Müzesi:
+                Samsun Kent Müzesi, şehirdeki yerel tarih ve kültüre odaklanan bir müzedir. Burada, Samsun'un kalkınma
+                sürecini ve modernleşme yolculuğunu anlatan sergiler bulunur. Kurtuluş Savaşı'nın başlangıç noktası
+                olarak kabul edilen Samsun'a gelen Mustafa Kemal Atatürk'ün ziyaretini de belgeleyen önemli objeler ve
+                fotoğraflar da müzede yer alır. Ayrıca müzede, Samsun'un sosyal ve ekonomik yapısını yansıtan dönem
+                mobilyaları, el işleri ve kostümler gibi sergiler de ziyaretçilere sunulur.
+            </p>
+            <p id="makale">
+                3-Atatürk Evi ve Müzesi:
+                Samsun'da bulunan Atatürk Evi ve Müzesi, Türkiye Cumhuriyeti'nin kurucusu Mustafa Kemal Atatürk'ün
+                Samsun'a çıktığı evi olarak bilinir. Bu tarihi yapı, ziyaretçilere Atatürk'ün Samsun'da geçirdiği süreci
+                ve milli mücadeleye başlangıcını anlatan bir müze olarak hizmet verir. Atatürk'ün kişisel eşyaları,
+                fotoğrafları ve belgeleri müzede sergilenir. Ayrıca evin iç dekorasyonu ve döneme ait özellikleri,
+                ziyaretçilere tarihi bir atmosfer sunar.
+            </p>
+            <p id="makale">
+                4-Samsun Bandırma Vapuru Müzesi:
+                Samsun Bandırma Vapuru, Türkiye'nin bağımsızlık mücadelesinde önemli bir rol oynayan Mustafa Kemal
+                Atatürk'ün Samsun'a çıkışını simgeler. Bu tarihi vapur, şimdi bir müze olarak işlev görür ve
+                ziyaretçilere bağımsızlık mücadelesinin tarihi hakkında bilgi verir. Müze, vapurun içindeki sergiler ve
+                görseller aracılığıyla dönemin atmosferini canlandırır ve milli mücadele dönemine ışık tutar.
+            </p>
+            <p id="makale">
+                Samsun'da bulunan bu müzeler, ziyaretçilere şehrin tarihini, kültürünü ve milli mücadele sürecini daha
+                yakından tanıma fırsatı sunar. Her bir müze, benzersiz içerikleriyle ziyaretçileri geçmişe bir yolculuğa
+                çıkarır ve Samsun'un zengin kültürel dokusunu keşfetme imkanı sağlar.</p>
+        </article>
+    </section>
+    <hr>
+    <section id="Tarih" class="Hobiler " >
+
+        <h3 id="h3gri"> Tarihi ve Doğal Güzellikler</h3>
+
+        <br><br>
+
+        <article id="container">
+            <p id="makale">Samsun, Türkiye'nin Karadeniz Bölgesi'nde bulunan tarihi ve doğal güzellikleriyle büyüleyen
+                bir şehirdir. Hem zengin tarihine sahip olması hem de doğal güzellikleriyle çevrili olması, Samsun'u
+                keşfetmek için benzersiz bir destinasyon haline getirir.
+            </p>
+            <p id="makale">
+                Samsun, tarih boyunca birçok medeniyete ev sahipliği yapmıştır. Şehrin tarihi, antik çağlardan günümüze
+                uzanan zengin bir mirasa sahiptir. Arkeolojik kazılarda ortaya çıkan eserler, Roma, Bizans ve Osmanlı
+                dönemlerine ait izlerin hala görülebilmesini sağlar. Samsun'da bulunan antik kentler ve tarihi yapılar,
+                ziyaretçilere geçmişe yolculuk yapma fırsatı sunar. Amisos Antik Kenti, Samsun Kalesi ve tarihi Saathane
+                Meydanı gibi önemli noktalar, şehrin tarihi dokusunu yansıtır.
+            </p>
+            <p id="makale">
+                Ancak Samsun sadece tarihiyle değil, aynı zamanda doğal güzellikleriyle de büyüler. Şehir, Karadeniz'in
+                eşsiz manzaraları ve doğal zenginlikleriyle çevrilidir. Samsun'un sahil şeridi, muhteşem plajları ve
+                temiz deniziyle ziyaretçilerin rahatlatıcı bir tatil geçirmesine olanak sağlar. Atakum Plajı,
+                Türkiye'nin en uzun sahil şeritlerinden birine sahiptir ve güneşin, kumun ve denizin tadını çıkarmak
+                isteyenler için ideal bir noktadır. Ayrıca Samsun'da bulunan Kabaceviz Şelalesi, Kızılırmak Deltası Kuş
+                Cenneti ve Ladik Gölü gibi doğal güzellikler, doğa severleri cezbeder. Bu alanlar, yürüyüş, piknik ve
+                doğa fotoğrafçılığı gibi etkinlikler için mükemmel birer seçenektir.
+            </p>
+            <p id="makale">
+                Samsun'un tarihi ve doğal güzellikleri, ziyaretçilere unutulmaz deneyimler sunar. Hem tarihi mekanları
+                keşfederken hem de doğanın tadını çıkarırken Samsun'un benzersiz atmosferini yaşamak mümkündür. Şehir,
+                kültürel etkinlikleri, festivalleri ve lezzetli mutfağıyla da zengin bir deneyim sunar. Samsun'a yapılan
+                bir gezi, tarih, doğa ve kültürle dolu bir macera olacaktır.
+
+            </p>
+        </article>
+    </section>
+    <hr>
+    <section id="Amazon" class="Hobiler">
+
+        <h3 id="h3gri"> Amazon Köyü</h3>
+
+        <br><br>
+
+        <article id="container">
+            <p id="makale">Samsun'un Terme ilçesinde bulunan Amazon köyü, efsanevi Amazon kadın savaşçılarına dayanan
+                bir kültürel mirası yansıtan bir yerleşim bölgesidir. Bu köy, Amazon mitolojisinin etkisini hissettiren
+                bir atmosfer sunar ve ziyaretçilere kadim dönemlerin izlerini takip etme imkanı verir.
+            </p>
+            <p id="makale">
+                Amazon köyünde, geleneksel Amazon yaşam tarzını yansıtan evler, yapay tepeler ve etkileyici yapılar
+                bulunur. Bu yapılar, Amazon kültürünü yansıtan sanat eserleri, takılar, silahlar ve diğer eşyalarla
+                dekore edilmiştir. Ayrıca köyde Amazon savaşçılarına ait kıyafetler ve kostümler sergilenir.
+            </p>
+            <p id="makale">
+                Ziyaretçiler, Amazon köyünde yerel halkın günlük yaşamına tanık olabilir ve geleneksel el sanatlarına
+                dair gösterilere katılabilirler. Köyde gerçekleşen etkinlikler arasında Amazon dansları, müzik
+                performansları ve savaş sanatları gösterileri bulunur. Ayrıca, köydeki restoranlarda yöresel lezzetleri
+                deneyimleyebilir ve geleneksel Amazon mutfağının tadını çıkarabilirsiniz.
+            </p>
+            <p id="makale">
+                Amazon köyü, ziyaretçilere eşsiz bir deneyim sunar ve Samsun'un kültürel çeşitliliğini keşfetmek
+                isteyenler için ilgi çekici bir noktadır. Bu köyde, mitolojik geçmişin izlerini sürebilir ve Amazonların
+                efsanevi dünyasına adım atabilirsiniz.</p>
+        </article>
+    </section>
+
+    <!--Açıklama-->
 </body>
 
 </html>

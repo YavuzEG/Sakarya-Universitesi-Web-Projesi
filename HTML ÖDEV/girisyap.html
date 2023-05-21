@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()" >Giriş Yap</button>
+                <button type="button" class="toggle-btn" onclick="register()">Kayıt Ol</button>
+            </div>
+
+            <form id="Login" class="input-group" onsubmit="event.preventDefault();">
+                <input type="text" id="lnick" class="input-field" placeholder="Kullanıcı Adı" required>
+                <input type="password" id="lpassword" class="input-field" placeholder="Şifre" required>
+                <button type="submit" class="submit-btn" onclick="girisYap()">Giriş Yap</button>
+            </form>
+            <form id="Register" class="input-group" onsubmit="event.preventDefault();">
+                <input type="email" class="input-field" placeholder="Email" required>
+                <input type="text" id="rnick" class="input-field" placeholder="Kullanıcı Adı" required>
+                <input type="password" id="rpassword" class="input-field" placeholder="Şifre" required>
+                <input type="radio" name="Cinsiyet" id="cnsyt">Kadın
+                <input type="radio" name="Cinsiyet" id="cnsyt">Erkek
+              
+                <button type="submit" class="submit-btn" onclick="kayitOl()">Kayıt Ol</button>
+                
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        var x=document.getElementById("Login");
+        var z=document.getElementById("Register");
+        var y=document.getElementById("btn");
+
+        function register(){
+            x.style.left="-400px";
+            z.style.left="50px";
+            y.style.left="110px";
+        }
+        
+        function login(){
+            x.style.left="50px";
+            z.style.left="450px";
+            y.style.left="0px";
+        }
+
+    </script>
+
+    <script>
+    var kayitKullaniciAdi;
+    var kayitSifre;
+    
+    function kayitOl() {
+      kayitKullaniciAdi = document.getElementById("rnick").value;
+      kayitSifre = document.getElementById("rpassword").value;
+      
+      alert("Kayıt başarılı! Şimdi giriş yapabilirsiniz.");
+      
+      // Kayıt işlemi tamamlandıktan sonra formu sıfırlayabilirsiniz.
+      document.getElementById("Register").reset();
+    }
+    
+    function girisYap() {
+      var girisKullaniciAdi = document.getElementById("lnick").value;
+      var girisSifre = document.getElementById("lpassword").value;
+      
+      if (girisKullaniciAdi === kayitKullaniciAdi && girisSifre === kayitSifre) {
+        alert(`Hoşgeldiniz ${kayitKullaniciAdi}` );
+        
+        // Giriş başarılı olduğunda index.html sayfasına yönlendirme yapılabilir.
+        window.location.href = "index.html";
+      } else {
+        alert("Hatalı kullanıcı adı veya şifre!");
+      }
+    }
+    </script>
+</body>
+</html>
